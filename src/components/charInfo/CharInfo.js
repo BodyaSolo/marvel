@@ -104,7 +104,10 @@ const View = ({ char }) => {
             <ul className="char__comics-list">
                 {
                     comics.map((item, i) => {
-                        
+                        // eslint-disable-next-line
+                        if (i > 9) {
+                            return;
+                        }
                         return (
                             <li key={i} className="char__comics-item">
                                 <a href={item.resourceURI}>{item.name}</a>
