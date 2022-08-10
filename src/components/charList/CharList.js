@@ -115,9 +115,9 @@ class CharList extends Component {
         const content = !(loading || error) ? items : null;
         return (
         <div className="char__list">
-                {errorMessage}
-                {spinner}
-                {content}
+                { errorMessage }
+                { spinner }
+                { content }
             <button
                 className="button button__main button__long"
                 disabled={newItemLoading}
