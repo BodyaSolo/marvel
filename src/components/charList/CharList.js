@@ -38,7 +38,7 @@ class CharList extends Component {
 
     onCharListLoaded = (newCharList) => {
         let ended = false;
-        if (!newCharList.length < 9) {
+        if (newCharList.length < 9) {
             ended = true;
         }
 
