@@ -1,7 +1,16 @@
+import { Helmet } from 'react-helmet';
 import img from './error.gif'
+
 const ErrorMessage = () => {
   return (
     <div>
+      <Helmet>
+        <meta
+          name="description"
+          content="Error"
+        />
+        <title>Error</title>
+      </Helmet>
     <img style={{
       display: 'block',
       width: '100px',
